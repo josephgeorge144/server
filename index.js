@@ -57,7 +57,7 @@ app.use('/user',userRoute)
 app.use('/auth',authRoute)
 app.use('/post',postsRoute)
 
-app.listen(8800,()=>{
+app.listen(process.env.PORT || 8800,()=>{
     console.log('server is conneceted');
 })
 
